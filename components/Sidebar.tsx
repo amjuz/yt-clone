@@ -4,13 +4,14 @@ import { ReactNode } from "react";
 
 export default function Sidebar () {
     return (
+
         <div className="flex flex-col w-16 ml-2 mt-3 h-screen gap-8 items-center text-xs">
             
-                <SideButton text="Home" icon={ <Home/> }/>
-                <SideButton text="Shorts" icon={ <MonitorPlay/> }/>
-                <SideButton text="Subscriptions" icon={ <MonitorCheck/> }/>
-                <SideButton text="You" icon={ <SquarePlay/> }/>
-              
+            <SideButton text="Home" icon={ <Home/> }/>
+            <SideButton text="Shorts" icon={ <MonitorPlay/> }/>
+            <SideButton text="Subscriptions" icon={ <MonitorCheck/> }/>
+            <SideButton text="You" icon={ <SquarePlay/> }/>
+            
         </div>
     );
 }

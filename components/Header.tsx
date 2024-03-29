@@ -10,14 +10,16 @@ import {
 } from 'lucide-react'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useState } from 'react'
+import { MenuButton } from './ui/MenuButton'
 
 export default function Header() {
+
+
 	return (
 		<header className="px-4 py-2.5 flex justify-between items-center gap-32">
-			<section className="flex items-center gap-5 pl-3">
-				<button>
-					<Menu />
-				</button>
+			<section className="flex items-center gap-5 pl-3 ">
+				<MenuButton />
 				<Link href="/">
 					<Image
 						src="/logo.svg"
